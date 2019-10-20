@@ -1,47 +1,23 @@
-/ClasesPadres/nbproject/private/
-/Materias/nbproject/private/
-/PromedioMaterias/nbproject/private/
-/Peliculas/target/
-/Base_prueba/nbproject/private/
-/JavaApplication13/nbproject/private/
-/JavaApplication13/build/
-/OrganizacionEventos/nbproject/private/
-/OrganizacionEventos/build/
-/contadores/nbproject/private/
-/contadores/build/
-/Juego1/nbproject/private/
-/HorarioEventos/nbproject/private/
-/HorarioEventos/build/
-/Clase31/Casting/build/
-/Clase31/Casting/nbproject/private/
-/Ajedrez/nbproject/private/
-/Ajedrez/build/
-/Cajero_Hilos/nbproject/private/
-/Parques/dist/
-/Parques/build/
-/Parques/nbproject/private/
-/Prueba/nbproject/private/
-/Prueba/build/
-/Parqueadero/nbproject/private/
-/Figuras_plano/nbproject/private/
-/Figuras_plano/build/
-/Romanos/nbproject/private/
-/Romanos/build/
-/Parqueadero/build/
-/Hora/nbproject/private/
-/interfaz_Figuras/nbproject/private/
-/interfaz_Figuras/build/
-/Juego1/build/
-/tienda_de_videos/dist/
-/interfaz_Figuras/dist/
-/Alimentos/nbproject/private/
-/Alimentos/build/
-/Expo_Carros/nbproject/private/
-/Expo_Carros/build/
-/Base_prueba/build/
-/Cajero_Hilos/build/
-/Contadores_hilos/nbproject/private/
-/ListasDoblementeEnlazadas/nbproject/private/
-/JavaApplication1/nbproject/private/
-/JavaApplication1/build/
-/TablaAjax/target/
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
