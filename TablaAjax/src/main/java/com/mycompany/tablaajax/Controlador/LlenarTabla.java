@@ -6,10 +6,12 @@
 package com.mycompany.tablaajax.Controlador;
 
 import Utilitarios.Carro;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.SessionScoped;
+
 import javax.inject.Named;
 
 
@@ -19,7 +21,7 @@ import javax.inject.Named;
  */
 @Named(value = "llenarTabla")
 @SessionScoped
-public class LlenarTabla {
+public class LlenarTabla implements Serializable{
     
     public String nombre;
     
@@ -30,7 +32,32 @@ public class LlenarTabla {
     public List<String> marcas;
     
     public List<Carro> listaCarros;
+    
+    @PostConstruct
+    public void init(){
+        marcas = new ArrayList<>();
+        marcas.add("BMW");
+        marcas.add("Mercedes");
+        marcas.add("Volvo");
+        marcas.add("Audi");
+        marcas.add("Renault");
+        marcas.add("Fiat");
+        marcas.add("Volkswagen");
+        marcas.add("Honda");
+        marcas.add("Jaguar");
+        marcas.add("Ford");
+        listaCarros = new ArrayList<>();
+    }
 
+    public void accionBoton(){
+        Carro ca = new Carro();
+        ca.setNombre(this.getNombre());
+        ca.setMarca(this.getMarca());
+        ca.setAnio(this.getAnio());
+        
+        listaCarros.add(ca);
+    }
+    
     public List<Carro> getListaCarros() {
         return listaCarros;
     }
@@ -71,32 +98,4 @@ public class LlenarTabla {
         this.anio = anio;
     }
     
-    
-    
-    /**
-     * Creates a new instance of LlenarTabla
-     */
-    @PostConstruct
-    void init(){
-        marcas = new ArrayList<>();
-        marcas.add("BMW");
-        marcas.add("Mercedes");
-        marcas.add("Volvo");
-        marcas.add("Audi");
-        marcas.add("Renault");
-        marcas.add("Fiat");
-        marcas.add("Volkswagen");
-        marcas.add("Honda");
-        marcas.add("Jaguar");
-        marcas.add("Ford");
-    }
-    
-    public void accionBoton(){
-        Carro ca = new Carro();
-        ca.setNombre(this.getNombre());
-        ca.setMarca(this.getMarca());
-        ca.setAnio(this.getAnio());
-        
-        listaCarros.add(ca);
-    }
 }
